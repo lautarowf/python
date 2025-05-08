@@ -1,4 +1,4 @@
-Distancia entre dos puntos 
+#Distancia entre dos puntos 
 print("Ingrese la coordenada X del punto a")
 aX = float(input())
 print("Ingrese la coordenada Y del punto a")
