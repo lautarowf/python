@@ -6,4 +6,4 @@ perdidos = int(input())
 print("Ingrese los empates")
 empates = int(input())
 puntaje = ganados *3 + empates
-print("El puntaje es: ", puntaje)
+print("El puntaje del Rojo es: ", puntaje)
