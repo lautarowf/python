@@ -1,0 +1,11 @@
+#Distancia entre dos puntos
+print("Ingrese la cordenada X del punto A:")
+puntoXA = float(input())
+print("Ingrese la cordenada Y del punto A:")
+puntoYA = float(input())
+print("Ingrese la cordenada X del punto B:")
+puntoXB = float(input())
+print("Ingrese la cordenada Y del punto B:")
+puntoYB = float(input())
+distancia = ((puntoXB - puntoXA)**2 + (puntoYB - puntoYA)**2)**(1/2)
+print("La distancia del punto A al punto B es: ", distancia)
