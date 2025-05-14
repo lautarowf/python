@@ -10,6 +10,6 @@ MinutosSegundoTramo = int(input("Minutos: "))
 TotalMinutos = MinutosPrimerTramo+MinutosSegundoTramo
 HorasExtra = TotalMinutos // 60
 TotalMinutos = TotalMinutos % 60
-TotalHoras = HorasPrimerTramo+HorasSegundoTramo
+TotalHoras = HorasPrimerTramo+HorasSegundoTramo+HorasExtra
 
-print("El tiempo total fue de: ",TotalHoras, "Hs y ",TotalMinutos, "Minutos")
+print("El tiempo total fue de: ",TotalHoras, "Horas y ",TotalMinutos, "Minutos")
