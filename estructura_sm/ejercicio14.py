@@ -1,10 +1,10 @@
 #Calculos
-numero = int(input("ingrese un numero"))
-calculo = int(input("elija el calculo"))
+calculo = int(input("elija el calculo: "))
+numero = int(input("ingrese un numero: "))
 funcion = {
-1:100*calculo
-2:100**calculo
-3:100/calculo
+1:100*numero,
+2:100**numero,
+3:100/numero
 }
-calculo = funcion.get(numero, 0)
-print(calculo)
+numero = funcion.get(calculo, 0)
+print(numero)
