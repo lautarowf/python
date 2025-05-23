@@ -13,3 +13,13 @@ elif mes == 1 or mes == 3 or mes == 5 or mes == 7 or mes == 8 or mes == 10 or me
    dias_en_mes = 31
 elif mes == 4 or mes == 6 or mes == 9 or mes == 11:
    dias_en_mes = 30
+if dia <dias_en_mes:
+    dia += 1
+else:
+    dia = 1 
+    if mes <12:
+        mes += 1
+    else:
+        mes = 1
+        anio += 1
+print(dia, mes, anio)
