@@ -6,12 +6,10 @@ anio = int(input())
 if dia <30:
     dia += 1
 else:
-   dia = 1
-    if mes <12:
-        mes += 1
-    else:
-     mes = 1
-      anio += 1
-print(dia, mes, anio)
-    
-    
+    dia = 1 
+if mes <12:
+    mes += 1
+else:
+    mes = 1
+    anio += 1
+    print(dia, mes, anio)
