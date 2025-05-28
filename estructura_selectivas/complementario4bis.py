@@ -25,7 +25,8 @@ if mes == 4 or 6 or 9 or 11:
             mes = 1
             anio += 1
     print(dia, mes, anio)
-if (anio % 400 == 0) or (anio % 4 == 0 and anio % 100 != 0) and mes == 2:
+if (anio % 400 == 0) or (anio % 4 == 0 and anio % 100 != 0):
+    if mes == 2:
         if dia <29:
             dia += 1
         else:

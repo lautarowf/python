@@ -2,7 +2,7 @@
 print("Seleccione la figura que desea para calcular su area: ")
 print("1 - Circulo")
 print("2 - Triangulo")
-opcion = int(input(">"))
+opcion = int(input())
 PI = 3.14
 if opcion == 1:
     radio = float(input("Ingrese el radio: "))

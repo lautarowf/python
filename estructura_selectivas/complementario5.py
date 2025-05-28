@@ -6,6 +6,6 @@ if velocidad_1 > 0 and velocidad_2 > 0:
    tiempo_de_encuentro = distancia/(velocidad_1 + velocidad_2)
    print(tiempo_de_encuentro)
 else:
-   print(Error)
+   print("Error")
 
 
