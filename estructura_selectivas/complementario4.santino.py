@@ -35,15 +35,15 @@ else:
                         MesFinal=Mes+1
                         print("Mañana va a ser: ",DiaFinal,MesFinal,Año,)
                     else:
-#                        if ((Dia<28) and ((Año%4!=0) or (Año%400!=0) and (Año%100==0)) and (Mes==2)):
-#                            DiaFinal=Dia+1
-#                            print("Mañana va a ser: ",DiaFinal,Mes,Año,)
-#                        else:
-#                            if ((Dia==28) and ((Año%4!=0) or (Año%400!=0) and (Año%100==0)) and (Mes==2)):
-#                                DiaFinal=1
-#                                MesFinal=Mes+1
-#                               print("Mañana va a ser: ",DiaFinal,MesFinal,Año,)
-#                            else:
+                        if ((Dia<28) and ((Año%4!=0) or (Año%400!=0) and (Año%100==0)) and (Mes==2)):
+                            DiaFinal=Dia+1
+                            print("Mañana va a ser: ",DiaFinal,Mes,Año,)
+                        else:
+                            if ((Dia==28) and ((Año%4!=0) or (Año%400!=0) and (Año%100==0)) and (Mes==2)):
+                                DiaFinal=1
+                                MesFinal=Mes+1
+                                print("Mañana va a ser: ",DiaFinal,MesFinal,Año,)
+                            else:
                                 if Dia==31 and Mes==12:
                                     DiaFinal=1
                                     MesFinal=1
