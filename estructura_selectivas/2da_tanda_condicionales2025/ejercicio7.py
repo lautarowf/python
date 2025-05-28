@@ -3,10 +3,10 @@ print("Ingrese un color: ")
 print("Rojo --> Ocupado")
 print("Verde --> Disponible")
 print("Azul --> En descanso")
-estado_lampara = input()
-if estado_lampara == "Rojo" or "ROJO" or "rojo":
+estado_lampara = input().lower()
+if estado_lampara == "rojo":
     print("Estado actual: Ocupado")
-elif estado_lampara == "Verde" or "VERDE" or "verde":
+elif estado_lampara == "verde":
     print("Estado actual: Disponible")    
-elif estado_lampara == "Azul" or "AZUL" or "azul":
+elif estado_lampara == "azul":
     print("Estado actual: En descanso")

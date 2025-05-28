@@ -27,10 +27,13 @@ else:
         dia += 1
     else:
         dia = 1
-    if mes == 12:
-        mes = 1
-        año += 1
+    if mes > 12:
+        print("Fecha invalida")
     else:
-        mes += 1
+        if mes == 12:
+            mes = 1
+            año += 1
+        else:
+            mes += 1
 # Salida
         print("Mañana va a ser:", dia, mes, año)

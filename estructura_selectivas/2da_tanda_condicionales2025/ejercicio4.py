@@ -1,5 +1,5 @@
 #Descuento por tipo de cliente
-print("Ingrese el tipo de cliente: (A, B o C)")
+print("Ingrese el tipo de cliente: (A, B o C)") #.upper()
 tipo_cliente = input()
 if tipo_cliente == "A" or "a":
     print("20% de descuento")
