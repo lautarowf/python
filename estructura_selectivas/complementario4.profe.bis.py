@@ -32,6 +32,5 @@ else:
         año += 1
     else:
         mes += 1
-        print("Mañana va a ser:", dia, mes, año)
 # Salida
-#print("Mañana va a ser:", dia, mes, año)
+        print("Mañana va a ser:", dia, mes, año)
