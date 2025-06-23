@@ -1,13 +1,16 @@
-# -*- coding: utf-8 -*-
-#Decoración: Nombre del Algoritmo
+
+# Algoritmo: Mostrar los dígitos de un número de derecha a izquierda
+
 print("-------------------------------------------------------")
-print("Ejercicio4: DETERMINAR LA SALIDA.")
+print("Ejercicio4: MOSTRAR DÍGITOS EN ORDEN INVERSO")
 print("-------------------------------------------------------")
-#Constantes
-#Entradas
+
+# Entrada del número
 print("Introduce un número: ")
-N = int( input())
-while N > 0 :
-    RESTO = N % 10
-    print(RESTO)
-    N = N // 10 #División Entera, N/10, es una división decimal
+numero = int(input())
+
+# Proceso: extraer y mostrar los dígitos desde el final
+while numero > 0:
+    digito = numero % 10          # Obtiene el último dígito
+    print(digito)                 # Muestra el dígito
+    numero = numero // 10         # Elimina el último dígito del número
