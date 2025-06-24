@@ -11,5 +11,5 @@ while contador_de_sueldos <= cantidad_de_empleados:
   if sueldo > sueldo_mayor:
     sueldo_mayor = sueldo
     orden_del_mayor = contador_de_sueldos
-print("El sueldo mayor es: ", sueldo_mayor)
+print("Empleado: ", orden_del_mayor,"-", sueldo_mayor)
   
