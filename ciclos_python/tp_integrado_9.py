@@ -14,4 +14,4 @@ while compra_total < LIMITE:
     compra_total += compra
     print(f"Total acumulado: ${compra_total:.2f}")
 
-print("\nFin del día. Total gastado:", compra_total)
+print("Fin del día. Total gastado:", compra_total)
