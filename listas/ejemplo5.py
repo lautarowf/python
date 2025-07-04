@@ -25,6 +25,8 @@ if 1 <= dimension <= 100:
     while fila < dimension and es_simetrica:
         columna = 0
         while columna < fila and es_simetrica:  # Solo se revisa la mitad inferior
+            print(matriz[fila][columna])
+            print(matriz[columna][fila])
             if matriz[fila][columna] != matriz[columna][fila]:
                 es_simetrica = False
             columna += 1
