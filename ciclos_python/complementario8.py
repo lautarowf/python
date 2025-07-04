@@ -1,30 +1,31 @@
-# Lista con los nombres de los días
-dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
+# Lista con los nombres de los días de la semana
+nombres_dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
 
-# Lista vacía para guardar los minutos por día
+# Lista para registrar los minutos de actividad de cada día
 minutos_por_dia = []
 
-# Acumulador para la suma total
-suma_total = 0
+# Variable para acumular el total de minutos semanales
+total_minutos = 0
 
-# Bucle for que recorre cada día
-for dia in dias:
-    minutos = int(input(f"Ingrese los minutos de actividad del día {dia}: "))
-    minutos_por_dia.append(minutos)  # Agrega el dato a la lista
-    suma_total += minutos  # Suma al total
+# Registrar los minutos por día
+for dia in nombres_dias:
+    minutos = int(input(f"Ingrese los minutos de actividad física del día {dia}: "))
+    minutos_por_dia.append(minutos)
+    total_minutos += minutos
 
-# Cálculo del promedio
-promedio = suma_total / 7
+# Calcular promedio semanal
+promedio_semanal = total_minutos / 7
 
-# Buscar el valor máximo y mínimo en la lista
-maximo = max(minutos_por_dia)
-minimo = min(minutos_por_dia)
-
-# Buscar la posición (índice) donde se encuentra ese valor
-indice_max = minutos_por_dia.index(maximo)
-indice_min = minutos_por_dia.index(minimo)
+# Determinar el día con mayor y menor actividad
+minutos_maximos = max(minutos_por_dia)
+minutos_minimos = min(minutos_por_dia)
+indice_maximo = minutos_por_dia.index(minutos_maximos)
+indice_minimo = minutos_por_dia.index(minutos_minimos)
+dia_mas_activo = nombres_dias[indice_maximo]
+dia_menos_activo = nombres_dias[indice_minimo]
 
 # Mostrar resultados
-print(f"Promedio semanal: {promedio:.2f} minutos")
-print(f"Día con mayor actividad: {indice_max}")
-print(f"Día con menor actividad: {indice_min}")
+print("\n--- Resumen de actividad física ---")
+print(f"Promedio semanal: {promedio_semanal:.2f} minutos por día")
+print(f"Día con más actividad: {dia_mas_activo} ({minutos_maximos} minutos)")
+print(f"Día con menos actividad: {dia_menos_activo} ({minutos_minimos} minutos)")
