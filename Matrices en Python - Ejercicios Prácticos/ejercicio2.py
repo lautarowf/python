@@ -12,7 +12,8 @@ for alumnos in range(cantidad_de_alumnos):
     for nota_indice in range(cantidad_notas):
         valor_nota = int(input(f"Ingrese la nota {nota_indice+1}: "))
         lista_notas.append(valor_nota)
-    alumno = [nombre, lista_asignaturas, lista_notas]
+    materias = [lista_asignaturas, lista_notas]
+    alumno = [nombre, materias]
     calificaciones.append(alumno)
 for alumno in calificaciones:
     print(alumno)
