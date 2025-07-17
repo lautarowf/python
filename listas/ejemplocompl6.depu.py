@@ -3,22 +3,21 @@ print("-------------------------------------------------------")
 print("Complemento6: ORDENAR DESCENDENTEMENTE EL VECTOR - EXPLICADO")
 print("-------------------------------------------------------")
 
-# Paso 1: Inicializar el vector vacío
+# Paso 1: Inicializar vector
 vector_numeros = []
 
-# Paso 2: Leer la cantidad de elementos
+# Paso 2: Leer cantidad de elementos
 cantidad_elementos = int(input("Ingrese la cantidad de elementos del vector: "))
 
-# Paso 3: Cargar los números dentro del vector
+# Paso 3: Cargar los números
 print("Ingrese los valores del vector:")
 for posicion in range(cantidad_elementos):
     numero = int(input(f"Elemento {posicion + 1}: "))
     vector_numeros.append(numero)
 
-# Mostrar el vector original
 print("\nVector original:", vector_numeros)
 
-# Paso 4: Ordenar el vector manualmente de mayor a menor (Burbuja Descendente)
+# Paso 4: Ordenar manualmente (Burbuja Descendente) con EXPLICACIONES
 for pasada in range(cantidad_elementos):
     print(f"\n🔄 Pasada {pasada + 1}:")
 
@@ -26,21 +25,20 @@ for pasada in range(cantidad_elementos):
         num_actual = vector_numeros[indice]
         num_siguiente = vector_numeros[indice + 1]
 
-        print(f"Comparando posición {indice} ({num_actual}) con posición {indice + 1} ({num_siguiente})")
+        print(f"Comparando {num_actual} (posición {indice}) con {num_siguiente} (posición {indice + 1})")
 
         if num_actual < num_siguiente:
-            # Mensaje explicativo del intercambio
-            print(f"➡ Intercambiando {num_actual} y {num_siguiente} para colocar el mayor primero")
+            # Explicación en pantalla
+            print(f"➡ Intercambiando: {num_actual} sube, {num_siguiente} baja")
 
-            # Intercambio manual utilizando variable auxiliar
-            auxiliar = vector_numeros[indice]
-            vector_numeros[indice] = vector_numeros[indice + 1]
-            vector_numeros[indice + 1] = auxiliar
+            # Intercambio manual explicado
+            auxiliar = vector_numeros[indice]                   # Guardamos el primero
+            vector_numeros[indice] = vector_numeros[indice + 1] # El segundo va al lugar del primero
+            vector_numeros[indice + 1] = auxiliar               # El primero (auxiliar) va al lugar del segundo
 
-            print("➡ Vector actualizado:", vector_numeros)
+            print("➡ Resultado parcial:", vector_numeros)
         else:
             print("✔ No se intercambia")
 
-# Paso 5: Mostrar el resultado final
 print("\n✅ Vector final ordenado de mayor a menor:", vector_numeros)
 
